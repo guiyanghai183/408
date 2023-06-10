@@ -2,7 +2,14 @@
 #include <cstring>
 #include <algorithm>
 #include <stack>
-
+/*背过就行，408未考过大题，但是代码也要背过
+设置两个栈： 数栈 符号栈
+遍历整个字符串
+1. "(" 直接进栈
+2. ")" 操作(eval)到遇到"(",再把"("出栈
+3. 数字   直接进栈
+4. +-*/   操作到遇到"(" 或 栈顶优先级 < 当前优先级 
+*/
 using namespace std;
 
 stack <char> op;
