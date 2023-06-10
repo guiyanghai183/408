@@ -3,7 +3,9 @@
 #include <algorithm>
 #include <unordered_map>
 #include <stack>
-
+/*
+先看表达式求值，把有关num的操作删除即可
+*/
 using namespace std;
 
 stack<char> op;
