@@ -6,6 +6,12 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+/*代码逻辑
+1 计算链表节点数量
+2 将链表分成两段
+3 倒序重排后面的链表
+4 将两段链表接起来
+*/
 class Solution {
 public:
     void rearrangedList(ListNode* head) {
